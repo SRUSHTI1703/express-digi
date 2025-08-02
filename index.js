@@ -1,7 +1,8 @@
+ import 'dotenv/config' // this package expects in your folder you have a file named .env
 import express from 'express'
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 //this is basic
 // app.get("/" , (req, res)=>{
 //     res.send("hello from sumeet")
